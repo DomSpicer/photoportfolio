@@ -1,3 +1,71 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com');
+@import url('https://fonts.gstatic.com');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+  font-family: 'Casta';
+  src: url(/fonts/casta/castathin.woff);
+}
+
+:root {
+  --primary: #1a1a1a;
+  --secondary: #fbfbfb;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@layer base {
+  body {
+    background-color: #fbfbfb;
+    font-family: 'sora', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 1.58;
+
+  }
+}
+
+h1 {
+  font-family: 'Sora', sans-serif;
+  color: #1a1a1a;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 200px;
+}
+
+h3 {
+  font-family: 'Sora', sans-serif;
+  color: #1a1a1a;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+.mainbtn {
+  font-family: 'Sora', sans-serif;
+  color: #1a1a1a;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 30px;
+  border-radius: 45px;
+  border-color: #1a1a1a;
+  padding: 15px;
+}
+
+#accenthdr{
+  font-family: 'casta', sans-serif;
+  color: #1a1a1a;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 150px;
+}
