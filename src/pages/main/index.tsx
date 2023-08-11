@@ -1,9 +1,7 @@
 import { type NextPage } from "next";
 import Head from "next/head";
-import Link from "next/link";
 import { SignIn, SignInButton, useUser, SignOutButton } from "@clerk/nextjs";
 import { api } from "~/utils/api";
-import { global } from "styled-jsx/css";
 
 const Home: NextPage = () => {
   const user = useUser();
@@ -19,10 +17,10 @@ const Home: NextPage = () => {
       </Head>
       <main className="bg-#fbfbfb flex min-h-screen flex-col items-center justify-center">
         <h1 id="accenthdr" className="-m-32">CAPTURED</h1>
-        <h1 className="">VISIONS</h1>
+        <h1>VISIONS</h1>
         <p className="text-xl text-center px-96 uppercase">
           Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard
+          industry. Lorem Ipsum has been the industry standard
         </p>
         <div>
           {!user.isSignedIn && <SignInButton />}

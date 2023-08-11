@@ -6,7 +6,7 @@ import Services from "~/pages/main/Services";
 import Portfolio from "~/pages/main/Portfolio";
 import Contact from "~/pages/main/Contact";
 
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 const MainRoutes = () => {
     return (
